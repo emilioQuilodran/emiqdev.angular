@@ -10,13 +10,8 @@ export class ButtonComponent implements OnInit {
   @Input() text: string | undefined;
   @Input() disabled: boolean | undefined;
 
-
   ngOnInit(): void {
-    if(this.text === 'SEND MESSAGE'){
-    console.log("q valor llega aca: ", this.disabled)
 
-    }
   }
-
 
 }
