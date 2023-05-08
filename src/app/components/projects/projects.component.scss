@@ -1,0 +1,110 @@
+.projects {
+  padding: 1em;
+  width: 90%;
+
+  .project-thumbnail{
+    width: 100%;
+    height: auto;
+  }
+
+  .projects-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .projects-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .card {
+      margin: 16px 0;
+      h3 {
+        margin: 10px 0;
+      }
+      .image-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        > div {
+          opacity: 0;
+        }
+      }
+      .techs {
+        margin: 10px 0;
+        span {
+          margin-right: 15px;
+        }
+      }
+      .card-actions {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+
+
+@media (min-width:680px) {
+  .projects {
+    max-width: 860px;
+    padding: 0;
+
+    .projects-body {
+      max-width: 860px;
+      justify-content: space-between;
+      gap: 15px 0;
+      padding: 4em 0;
+      .card {
+        width: 45%;
+        .image-content {
+          position: relative;
+          >div {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba($color: #000000, $alpha: .8);
+            transition: opacity .2s ease-in-out;
+            .card-actions {
+              text-align: center;
+              flex-flow: column wrap;
+              padding-top: 65px;
+              app-button {
+                display: block;
+                &:last-of-type{
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+          &:hover {
+            >div {
+              opacity: 1;
+            }
+          }
+        }
+        >.card-actions {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 860px){
+  .projects {
+    padding-top: 2em;
+    width: 860px;
+    .projects-body {
+      padding: 2em 0;
+    }
+  }
+}
+
+.mat-mdc-progress-spinner { --mdc-circular-progress-active-indicator-color: var(--green); }

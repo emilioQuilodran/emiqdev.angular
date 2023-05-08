@@ -1,0 +1,56 @@
+.toolbar {
+  text-align: center;
+  z-index: 2;
+
+  > ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 0;
+
+    li {
+      margin-left: 20px;
+      span {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        mask-size: cover;
+        background-color: var(--white);
+
+        &.git {
+          mask-image: url(../../../../assets/images/icons/git.svg);
+        }
+        &.fm {
+          mask-image: url(../../../../assets/images/icons/fm.svg);
+        }
+        &.linkedin {
+          mask-image: url(../../../../assets/images/icons/linkedin.svg);
+        }
+        &.tweeter {
+          mask-image: url(../../../../assets/images/icons/tweeter.svg);
+        }
+        &:hover {
+          background-color: var(--green);
+        }
+      }
+    }
+  }
+  &.large {
+    margin: 5%;
+  }
+}
+
+@media (min-width:600px) {
+  .toolbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    > ul {
+      margin: 0;
+    }
+  }
+}

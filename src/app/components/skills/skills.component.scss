@@ -1,0 +1,28 @@
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 2em 0;
+  h3 {
+    font-size: 32px;
+    font-weight: bolder;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:680px) {
+  .skills {
+    display: flex;
+    flex-flow: row wrap;
+    width: 860px;
+
+    > div {
+      flex: 30%;
+      text-align: left;
+      box-sizing: border-box;
+    }
+  }
+}

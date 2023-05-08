@@ -1,0 +1,35 @@
+<section class="projects">
+   <div class="projects-header">
+    <h2 translate>projectTitle</h2>
+    <app-button text="CONTACT ME"></app-button>
+   </div>
+
+  <div class="projects-body" [ngStyle]="{'flex-direction': isLoading ? 'column' : 'row' }">
+    <ng-container *ngIf="!isLoading ; else waitTemplate">
+      <div *ngFor="let item of projectList; let i = index" class="card">
+        <div class="image-content">
+          <img class="project-thumbnail" src="{{item.image}}" alt="">
+          <div>
+            <div class="card-actions">
+              <app-button text="VIEW PROJECT"></app-button>
+              <app-button text="VIEW CODE"></app-button>
+            </div>
+          </div>
+        </div>
+        <h3>{{item.title}}</h3>
+        <div class="techs">
+          <span *ngFor="let tech of item.techs">
+            {{tech}}
+          </span>
+        </div>
+        <div class="card-actions">
+          <app-button text="VIEW PROJECT"></app-button>
+          <app-button text="VIEW CODE"></app-button>
+        </div>
+      </div>
+    </ng-container>
+    <ng-template #waitTemplate>
+      <mat-spinner></mat-spinner>
+    </ng-template>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+{
+  "mainPhrase": "Hola! mucho gusto, ",
+  "itsMe": "soy Emilio Quilodran.",
+  "subPhrase": "Me encuentro en Argentina, Me encanta desarrollar aplicaciones que generen valor en la vida de las personas 😎..",
+  "contactButton": "ESCRIBIME",
+  "formButton": "ENVIAR MENSAJE",
+  "buttonViewCode": "VER CODIGO",
+  "buttonViewProject": "VER PROYECTO",
+  "buttonPhrase": "es-AR",
+  "projectTitle": "Proyectos",
+  "contactTitle": "Contacto",
+  "contactMessage": "Me encantaría saber sobre su proyecto y cómo podría ayudar. Por favor, rellene el formulario y me pondré en contacto con usted lo antes posible.",
+  "nameForm": "Ingresa tu nombre",
+  "emailForm": "Ingresa tu email",
+  "messageForm": "Qué tienes en mente?",
+  "experienceQuote": "Años de experiencia",
+  "errorMessageRequired": "El campo es requerido",
+  "errorFormatEmail": " El formato del email no es correcto"
+}

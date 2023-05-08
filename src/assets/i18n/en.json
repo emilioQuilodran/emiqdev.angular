@@ -1,0 +1,19 @@
+{
+  "mainPhrase": "Nice to meet you! ",
+  "itsMe": "I'm Emilio Quilodran.",
+  "subPhrase": "Based in Argentina, I'm a front-end developer passionate about building accesible web apps that users love.",
+  "contactButton": "CONTACT ME",
+  "formButton": "SEND MESSAGE",
+  "buttonViewCode": "VIEW CODE",
+  "buttonViewProject": "VIEW PROJECT",
+  "buttonPhrase": "en",
+  "projectTitle": "Projects",
+  "contactTitle": "Contact",
+  "contactMessage": "I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.",
+  "nameForm": "Name",
+  "emailForm": "Email",
+  "messageForm": "Message",
+  "experienceQuote": "Years experience",
+  "errorMessageRequired": "this field is required",
+  "errorFormatEmail": "The email format is not valid"
+}

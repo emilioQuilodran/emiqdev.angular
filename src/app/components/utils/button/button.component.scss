@@ -1,0 +1,29 @@
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  color:var(--white);
+  background: linear-gradient(to right, var(--green), var(--green) 50%, var(--white) 50%);
+  cursor: pointer;
+  padding: 0 0 10px 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+  border-bottom: solid 2px var(--green);
+  &:hover{
+    background-position: 0 100%;
+  }
+  &:disabled {
+    background: linear-gradient(to right, var(--dark-grey), var(--dark-grey) 50%, var(--black) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    cursor: not-allowed;
+  }
+}

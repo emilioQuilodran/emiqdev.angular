@@ -1,0 +1,16 @@
+<button class="btn" type="submit" [disabled]="disabled">
+  <ng-container [ngSwitch]="text">
+    <ng-container *ngSwitchCase="'CONTACT ME'">
+      <a href="#contact" translate>contactButton</a>
+    </ng-container>
+    <ng-container *ngSwitchCase="'VIEW PROJECT'">
+      <a href="#" translate>buttonViewProject</a>
+    </ng-container>
+    <ng-container *ngSwitchCase="'VIEW CODE'">
+      <a href="#" translate>buttonViewCode</a>
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+      <span translate>formButton</span>
+    </ng-container>
+  </ng-container>
+</button>

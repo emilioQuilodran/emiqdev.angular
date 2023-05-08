@@ -1,0 +1,26 @@
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="contact-header">
+      <h2 translate>contactTitle</h2>
+      <p translate>contactMessage</p>
+    </div>
+    <form [formGroup]="contactForm" (submit)="submitForm($event ,contactForm.value)">
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="NAME" formControlName="name" type="text">
+        <mat-error *ngIf="name?.errors?.['required'] && name?.touched" translate> errorMessageRequired </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="EMAIL" formControlName="email" type="text">
+        <mat-error *ngIf="email?.errors?.['required'] && email?.touched" translate> errorMessageRequired </mat-error>
+        <mat-error *ngIf="email?.errors?.['email'] && email?.touched" translate> errorFormatEmail </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <textarea matInput placeholder="MESSAGE" formControlName="message"></textarea>
+        <mat-error *ngIf="message?.errors?.['required'] && message?.touched" translate> errorMessageRequired</mat-error>
+      </mat-form-field>
+      <app-button text="SEND MESSAGE" [disabled]="contactForm.invalid"></app-button>
+    </form>
+  </div>
+</section>
