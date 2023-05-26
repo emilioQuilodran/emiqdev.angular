@@ -18,6 +18,7 @@ export const PROJECTS_LIST: IProject[] = [
     urlDemo: "https://emiqdevtodoapp.netlify.app/",
     urlCode: "https://github.com/emilioQuilodran/TodoApp/tree/master"
   },
+  /*
   {
     id: 3,
     title: "ECOMMERCE PRODUCT PAGE",
@@ -26,7 +27,7 @@ export const PROJECTS_LIST: IProject[] = [
     desciption: "a beautiful product page made with React, Redux and an aproach using material ui and styled component",
     urlDemo: "https://emiqdev-sneakers.netlify.app/",
     urlCode: "https://github.com/emilioQuilodran/product-page"
-  },
+  },*/
   {
     id: 4,
     title: "GIFFOS WEB APP",
