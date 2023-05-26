@@ -3,5 +3,7 @@ export interface IProject {
   title: string,
   techs: string[],
   image: string,
-  desciption: string
+  desciption: string,
+  urlDemo: string,
+  urlCode: string
 }

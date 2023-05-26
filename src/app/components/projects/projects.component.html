@@ -11,8 +11,15 @@
           <img class="project-thumbnail" src="{{item.image}}" alt="">
           <div>
             <div class="card-actions">
-              <app-button text="VIEW PROJECT"></app-button>
-              <app-button text="VIEW CODE"></app-button>
+              <app-button
+                *ngIf=" item.id != 5"
+                linkDemo="{{item.urlDemo}}"
+                text="VIEW PROJECT">
+              </app-button>
+              <app-button
+                linkCode="{{item.urlCode}}"
+                text="VIEW CODE">
+              </app-button>
             </div>
           </div>
         </div>
@@ -23,8 +30,14 @@
           </span>
         </div>
         <div class="card-actions">
-          <app-button text="VIEW PROJECT"></app-button>
-          <app-button text="VIEW CODE"></app-button>
+          <app-button
+            linkDemo="{{item.urlDemo}}"
+            text="VIEW PROJECT">
+          </app-button>
+          <app-button
+            linkCode="{{item.urlCode}}"
+            text="VIEW CODE">
+          </app-button>
         </div>
       </div>
     </ng-container>

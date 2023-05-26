@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class ButtonComponent implements OnInit {
   @Input() text: string | undefined;
+  @Input() linkDemo: string | undefined;
+  @Input() linkCode: string | undefined;
   @Input() disabled: boolean | undefined;
 
   ngOnInit(): void {
