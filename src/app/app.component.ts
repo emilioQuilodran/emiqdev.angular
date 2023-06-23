@@ -11,12 +11,10 @@ import { ApiService } from './services/api.service';
 export class AppComponent implements OnInit {
   title = 'my-portfolio';
   currentLanguage: string = 'en';
-
   constructor(
     private translate: TranslateService,
     private apiService: ApiService
   ) { }
-
   async ngOnInit(): Promise<void> {
     await this.setLanguage();
   }

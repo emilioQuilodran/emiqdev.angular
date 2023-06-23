@@ -26,4 +26,12 @@
     background-position: 100%;
     cursor: not-allowed;
   }
+  .wpIcon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../../assets/images/whatsapp.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

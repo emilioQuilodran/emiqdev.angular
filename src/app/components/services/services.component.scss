@@ -1,0 +1,30 @@
+.services {
+  padding: 1em;
+  width: 90%;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+}
+@media (min-width:680px) {
+  .services {
+    width: 860px;
+    padding: 2em 0;
+    .services-content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      > div {
+        h3 {
+          font-size: 32px;
+          font-weight: bolder;
+        }
+        width: 45%;
+      }
+      img {
+        width: 80%;
+      }
+      .sessions {
+        width: 70%;
+      }
+    }
+  }
+}

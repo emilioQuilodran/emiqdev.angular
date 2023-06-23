@@ -13,6 +13,16 @@ import { NavBarComponent } from './components/utils/nav-bar/nav-bar.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ServicesComponent } from './components/services/services.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { GoogleApiModule, NgGapiClientConfig } from 'ng-gapi';
+import { environment } from './environments/environment';
+
+
+const gapiClientConfig: NgGapiClientConfig = {
+  client_id: environment.GOOGLE_CLIENT_ID,
+  discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
+};
 
 @NgModule({
   declarations: [
@@ -22,7 +32,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     ProjectsComponent,
     ContactComponent,
     ButtonComponent,
-    NavBarComponent
+    NavBarComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,15 +42,20 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatDialogModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
+    }),
+    GoogleApiModule.forRoot({
+      provide: gapiClientConfig,
+      useValue: gapiClientConfig
     })
   ],
-  providers: [],
+  exports: [GoogleApiModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

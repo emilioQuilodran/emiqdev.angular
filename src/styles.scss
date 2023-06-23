@@ -29,8 +29,8 @@ $my-portfolio-theme: mat.define-light-theme((
 ));
 
 :root {
-  --black: rgb(21,21,21);
-  --dark-grey: rgb(36,36,36);
+  --black: #171823;
+  --dark-grey: #25273D; //rgb(36,36,36);
   --grey: rgb(217,217,217);
   --green: rgb(78, 225, 160);
   --white: rgb(255,255,255);

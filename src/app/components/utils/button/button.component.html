@@ -9,6 +9,13 @@
     <ng-container *ngSwitchCase="'VIEW CODE'">
       <a href="{{linkCode}}" target="_blank" translate>buttonViewCode</a>
     </ng-container>
+    <ng-container *ngSwitchCase="'START NOW'">
+      <a href="https://wa.me/541160300788?text=Hola,%20me%20gustaria%20hacer%20una%20consulta%20sobre%..." target="_blank" translate>buttonStartNow <span class="wpIcon"></span></a>
+    </ng-container>
+    <ng-container *ngSwitchCase="'Agendar sesion'">
+      <a href="{{linkCode}}" target="_blank" translate>buttonSchedule</a>
+    </ng-container>
+
     <ng-container *ngSwitchDefault>
       <span translate>formButton</span>
     </ng-container>
