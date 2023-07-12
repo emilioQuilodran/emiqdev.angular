@@ -20,6 +20,7 @@ import { environment } from './environments/environment';
 import { HomeComponentComponent } from './pages/home-component/home-component.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutMeComponentComponent } from './pages/about-me-component/about-me-component.component';
+import { EducationComponent } from './components/education/education.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { AboutMeComponentComponent } from './pages/about-me-component/about-me-c
     NavBarComponent,
     ServicesComponent,
     HomeComponentComponent,
-    AboutMeComponentComponent
+    AboutMeComponentComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

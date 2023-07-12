@@ -1,21 +1,65 @@
 .about-me {
-  max-width: 70%;
-  margin: 0 auto;
   text-align: center;
+  h2 {
+    color: #8F2A8E;
+  }
   .about-projects {
-    margin: 4em 0;
+    margin: 4em auto;
+    max-width: 70%;
+
   }
   .about-me-hero {
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    .content {
-      text-align: left;
-      width: 40%;
-    }
+    max-width: 70%;
+    margin: 0 auto;
     .img {
+      grid-area: img;
       overflow: hidden;
       border-radius: 50%;
+      img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+    .btn {
+      grid-area: btn;
+      display:block;
+      font-size: 12px;
+      font-weight: bold;
+      background: #32CF9B;
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 10px;
+
+      &:hover {
+        background: #4d094b;
+        color: #32CF9B;
+      }
+    }
+    .content {
+      grid-area: content;
+    }
+  }
+}
+
+@media (min-width:680px) {
+  .about-me {
+    .about-me-hero {
+      max-width: 50%;
+      gap: 2em;
+      display: grid;
+      grid-template-areas:
+        "content img img"
+        "content img img"
+        "content btn btn"
+      ;
+      .content {
+        text-align: left;
+      }
+      .btn {
+        width: 50%;
+        margin: 0 auto;
+      }
     }
   }
 }
