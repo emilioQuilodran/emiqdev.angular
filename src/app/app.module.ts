@@ -21,6 +21,7 @@ import { HomeComponentComponent } from './pages/home-component/home-component.co
 import { AppRoutingModule } from './app-routing.module';
 import { AboutMeComponentComponent } from './pages/about-me-component/about-me-component.component';
 import { EducationComponent } from './components/education/education.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { EducationComponent } from './components/education/education.component';
     ServicesComponent,
     HomeComponentComponent,
     AboutMeComponentComponent,
-    EducationComponent
+    EducationComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

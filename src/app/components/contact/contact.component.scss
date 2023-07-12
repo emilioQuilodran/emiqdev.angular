@@ -35,16 +35,20 @@
 @media (min-width:680px) {
   .contact {
     padding: 3em .8em;
+
     .content {
       display: flex;
       flex-direction: row;
       text-align: left;
       justify-content: space-between;
       max-width: 860px;
-      margin: 0 auto;
+      margin: 3em auto;
     }
     .contact-header {
       max-width: 40%;
+      h2 {
+        font-size: 2em;
+      }
     }
     form {
       width: 50%;
