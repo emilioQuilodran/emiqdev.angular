@@ -30,7 +30,7 @@ export const PROJECTS_LIST: IProject[] = [
   {
     id: 4,
     title: "GIFFOS WEB APP",
-    techs: ["HTML", "CSS", "JAVASCRIPT"],
+    techs: ["HTML", "CSS", "JS"],
     image: 'assets/images/gifos.jpg',
     desciption: "an interactive web application for sharing animated GIFs, putting into practice the fundamentals of programming and using JavaScript by getting API data from ,Giphy.com",
     urlDemo: "https://gifos-app-quilodran.netlify.app/index.html",
@@ -44,5 +44,23 @@ export const PROJECTS_LIST: IProject[] = [
     desciption: "The choice of Next.js and SASS are a great combination when it comes to implementation in our application. Next.js, through its focus on server-side rendering, enables faster loading speeds, improving performance and accessibility. On the other hand, SASS provides a variety of tools and features for easy CSS customization and maintenance",
     urlDemo: "https://emiqdev-suite-landing-page.netlify.app/",
     urlCode: "https://github.com/emilioQuilodran/suiteLanding"
+  },
+  {
+    id: 7,
+    title: "Fylo dark theme landing page",
+    techs: ["NEXT.JS", "SASS"],
+    image: 'assets/images/fylo.webp',
+    desciption: "Si bien la creación de una landing page puede parecer una tarea sencilla, crearla con Next.js agregó una capa adicional de complejidad. Sin embargo, esta tecnología proporcionó numerosos beneficios, incluida la representación del lado del servidor, que mejoró enormemente el rendimiento de la página y mejoró la experiencia del usuario.",
+    urlDemo: "https://emiqdevfylo.netlify.app/",
+    urlCode: "https://github.com/emilioQuilodran/fylo"
+  },
+  {
+    id: 8,
+    title: "Launch countdown timer",
+    techs: ["ReactJS", "SASS", "JS"],
+    image: 'assets/images/countDownComponent.webp',
+    desciption: "I wanted to share this amazing countdown component that I created using React and Sass for today's project. It's a sleek and visually appealing countdown that you can easily integrate into your projects. The combination of React's flexibility and Sass's powerful styling capabilities made it a breeze to develop",
+    urlDemo: "https://emiqdevcountdown.netlify.app/",
+    urlCode: "https://github.com/emilioQuilodran/countdown"
   }
 ]
