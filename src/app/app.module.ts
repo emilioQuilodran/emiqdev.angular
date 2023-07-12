@@ -22,7 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AboutMeComponentComponent } from './pages/about-me-component/about-me-component.component';
 import { EducationComponent } from './components/education/education.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
-
+import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule  } from 'ngx-google-analytics';
 
 @NgModule({
   declarations: [
@@ -54,7 +54,9 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    NgxGoogleAnalyticsModule.forRoot('G-2M1EMRRC5E'),
+    NgxGoogleAnalyticsRouterModule
   ],
   exports: [GoogleApiModule],
   bootstrap: [AppComponent]
