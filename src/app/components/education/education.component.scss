@@ -4,6 +4,7 @@
   text-align: center;
   margin-top: 2em;
   position: relative;
+  overflow: hidden;
   &:before {
     color: var(--black);
     display: block;
