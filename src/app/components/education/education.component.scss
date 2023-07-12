@@ -49,16 +49,20 @@
     }
   }
   @media (min-width:680px) {
-      .wrapper {
-        .education-slots {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-auto-flow: inherit;
-          gap: 0 2em;
-          .slot {
-            margin-top: 0;
-          }
+    padding-top: 5em;
+    &:before {
+      top: .4em;
+    }
+    .wrapper {
+      .education-slots {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-flow: inherit;
+        gap: 0 2em;
+        .slot {
+          margin-top: 0;
         }
       }
+    }
   }
 }
