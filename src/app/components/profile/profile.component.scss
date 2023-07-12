@@ -1,8 +1,7 @@
 .profile {
   text-align: center;
   position: relative;
-  border-bottom: solid 1px var(--white);
-  padding-bottom: 3em;
+  padding-top: 6em;
   max-width: 860px;
   .content {
     margin-top: -100px;
@@ -13,35 +12,15 @@
       }
     }
   }
-
-  .pic {
-    position: relative;
-    background-image: url("../../../assets/images/picIa1.jpg");
-    background-size: cover;
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    width: 75%;
-    height: 400px;
-    z-index: -1;
-    top: -55px;
-    display: inline-block;
-  }
 }
 
 @media (min-width:680px) {
   .profile {
+    padding-top: 2em;
+    margin: 0 auto;
     height: 310px;
-    text-align: left;
     .content {
       margin-top: 0;
-      width: 70%;
-    }
-    .pic {
-      width: 300px;
-      position: absolute;
-      right: 0;
-      height: 450px;
-      top: -165px;
     }
   }
 }

@@ -20,11 +20,3 @@
   }
 }
 
-footer {
-  border-top: solid 1px var(--white);
-  background-color: var(--dark-grey);
-  padding: 1.5em 0;
-  app-nav-bar, app-nav-bar .toolbar {
-    margin: 0 !important;
-  }
-}

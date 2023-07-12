@@ -1,0 +1,23 @@
+.about-me {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  .about-projects {
+    margin: 4em 0;
+  }
+  .about-me-hero {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    .content {
+      text-align: left;
+      width: 40%;
+    }
+    .img {
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  }
+}
+
+

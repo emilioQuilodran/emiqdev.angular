@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { ProfileComponent } from './components/profile/profile.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ButtonComponent } from './components/utils/button/button.component';
 import { NavBarComponent } from './components/utils/nav-bar/nav-bar.component';
@@ -17,12 +17,10 @@ import { ServicesComponent } from './components/services/services.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { GoogleApiModule, NgGapiClientConfig } from 'ng-gapi';
 import { environment } from './environments/environment';
+import { HomeComponentComponent } from './pages/home-component/home-component.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AboutMeComponentComponent } from './pages/about-me-component/about-me-component.component';
 
-
-const gapiClientConfig: NgGapiClientConfig = {
-  client_id: environment.GOOGLE_CLIENT_ID,
-  discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
-};
 
 @NgModule({
   declarations: [
@@ -33,10 +31,13 @@ const gapiClientConfig: NgGapiClientConfig = {
     ContactComponent,
     ButtonComponent,
     NavBarComponent,
-    ServicesComponent
+    ServicesComponent,
+    HomeComponentComponent,
+    AboutMeComponentComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
@@ -49,10 +50,6 @@ const gapiClientConfig: NgGapiClientConfig = {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    }),
-    GoogleApiModule.forRoot({
-      provide: gapiClientConfig,
-      useValue: gapiClientConfig
     })
   ],
   exports: [GoogleApiModule],

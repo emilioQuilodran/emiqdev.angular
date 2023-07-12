@@ -1,18 +1,18 @@
 <nav class="toolbar" role="banner" [ngClass]="{ 'large' : space === 'large' }">
-  <span>emiq.dev</span>
+  <span routerLink="/">emiq.dev</span>
   <ul>
     <li>
-      <a href="https://github.com/emilioQuilodran" target="_blank">
-        <span class="git"></span>
+      <a routerLink="/about">
+        Sobre mi
       </a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/emilio-quilodran-0340893b/" target="_blank">
-        <span class="linkedin"></span>
+      <a routerLink="/projects">
+        Proyectos
       </a>
     </li>
-    <li>
-      <span class="tweeter"></span>
+    <li class="s-right">
+      <span class="pic"></span>
     </li>
   </ul>
 </nav>

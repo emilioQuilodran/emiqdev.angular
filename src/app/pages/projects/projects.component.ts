@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit {
     .finally( () => {
       setTimeout(() => {
         this.isLoading = false
-      }, 2000);
+      }, 200);
       console.info("projects request finished", this.projectList)
     })
   }

@@ -63,3 +63,17 @@ h1, h2 {
 p {
   font-size: var(--fz-text);
 }
+
+footer {
+  border-top: solid 1px var(--white);
+  background-color: var(--dark-grey);
+  padding: 1.5em 0;
+  text-align: center;
+  app-nav-bar, app-nav-bar .toolbar {
+    margin: 0 !important;
+  }
+  p {
+    margin: 0;
+    font-size: 12px;
+  }
+}

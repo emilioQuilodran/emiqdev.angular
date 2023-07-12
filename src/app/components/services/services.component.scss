@@ -1,12 +1,9 @@
 .services {
-  padding: 1em;
-  width: 90%;
-  border-top: solid 1px white;
-  border-bottom: solid 1px white;
+  padding:1em;
+  text-align: center;
 }
 @media (min-width:680px) {
   .services {
-    width: 860px;
     padding: 2em 0;
     .services-content {
       display: flex;

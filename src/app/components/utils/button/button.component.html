@@ -3,6 +3,21 @@
     <ng-container *ngSwitchCase="'CONTACT ME'">
       <a href="#contact" translate>contactButton</a>
     </ng-container>
+    <ng-container *ngSwitchCase="'about me'">
+      <a routerLink="/about" translate>Sobre mi</a>
+    </ng-container>
+    <ng-container *ngSwitchCase="'ver proyectos'">
+      <a routerLink="/projects" translate>Ver proyectos</a>
+    </ng-container>
+    <ng-container *ngSwitchCase="'CodeCraft'">
+      <a href="https://emiqdevcountdown.netlify.app/" target="_blank" translate>ver más detalles</a>
+    </ng-container>
+    <ng-container *ngSwitchCase="'GitHub'">
+      <a href="https://github.com/emilioQuilodran" target="_blank">GitHub</a>
+    </ng-container>
+    <ng-container *ngSwitchCase="'Linkedin'">
+      <a href="https://www.linkedin.com/in/emilio-quilodran-0340893b/" target="_blank">Linkedin</a>
+    </ng-container>
     <ng-container *ngSwitchCase="'VIEW PROJECT'">
       <a href="{{linkDemo}}" target="_blank" translate>buttonViewProject</a>
     </ng-container>
@@ -13,7 +28,7 @@
       <a href="https://wa.me/541160300788?text=Hola,%20me%20gustaria%20hacer%20una%20consulta%20sobre%..." target="_blank" translate>buttonStartNow <span class="wpIcon"></span></a>
     </ng-container>
     <ng-container *ngSwitchCase="'Agendar sesion'">
-      <a href="{{linkCode}}" target="_blank" translate>buttonSchedule</a>
+      <a href="https://wa.me/541160300788?text=Hola,%20me%20gustaria%20hacer%20una%20consulta%20sobre%..." target="_blank" translate>buttonSchedule <span class="wpIcon"></span></a>
     </ng-container>
 
     <ng-container *ngSwitchDefault>

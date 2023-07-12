@@ -1,0 +1,56 @@
+<header>
+  <app-nav-bar space="large"></app-nav-bar>
+</header>
+<main class="content main projects" role="main">
+  <section class="projects">
+    <div class="projects-header">
+     <h2 translate>projectTitle</h2>
+    </div>
+
+   <div class="projects-body" [ngStyle]="{'flex-direction': isLoading ? 'column' : 'row' }">
+     <ng-container *ngIf="!isLoading ; else waitTemplate">
+       <div *ngFor="let item of projectList; let i = index" class="card">
+         <div class="image-content">
+           <img class="project-thumbnail" src="{{item.image}}" alt="">
+           <div>
+             <div class="card-actions">
+               <app-button
+                 *ngIf=" item.id != 5"
+                 linkDemo="{{item.urlDemo}}"
+                 text="VIEW PROJECT">
+               </app-button>
+               <app-button
+                 linkCode="{{item.urlCode}}"
+                 text="VIEW CODE">
+               </app-button>
+             </div>
+           </div>
+         </div>
+         <h3>{{item.title}}</h3>
+         <div class="techs">
+           <span *ngFor="let tech of item.techs">
+             {{tech}}
+           </span>
+         </div>
+         <div class="card-actions">
+           <app-button
+             *ngIf=" item.id != 5"
+             linkDemo="{{item.urlDemo}}"
+             text="VIEW PROJECT">
+           </app-button>
+           <app-button
+             linkCode="{{item.urlCode}}"
+             text="VIEW CODE">
+           </app-button>
+         </div>
+       </div>
+     </ng-container>
+     <ng-template #waitTemplate>
+       <mat-spinner></mat-spinner>
+     </ng-template>
+   </div>
+ </section>
+</main>
+<footer>
+  <p>© Copyright 2023. All Rights Reserved.</p>
+</footer>
