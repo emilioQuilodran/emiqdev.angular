@@ -16,8 +16,8 @@
       overflow: hidden;
       border-radius: 50%;
       img {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
       }
     }
@@ -45,7 +45,7 @@
 @media (min-width:680px) {
   .about-me {
     .about-me-hero {
-      max-width: 50%;
+      max-width: 70%;
       gap: 2em;
       display: grid;
       grid-template-areas:
@@ -59,6 +59,9 @@
       .btn {
         width: 50%;
         margin: 0 auto;
+        position: relative;
+        top: -40px;
+        padding: 7px 24px;
       }
     }
   }
