@@ -15,7 +15,6 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ServicesComponent } from './components/services/services.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { GoogleApiModule, NgGapiClientConfig } from 'ng-gapi';
 import { environment } from './environments/environment';
 import { HomeComponentComponent } from './pages/home-component/home-component.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -58,7 +57,7 @@ import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule  } from 'ngx-g
     NgxGoogleAnalyticsModule.forRoot('G-2M1EMRRC5E'),
     NgxGoogleAnalyticsRouterModule
   ],
-  exports: [GoogleApiModule],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
