@@ -18,12 +18,11 @@
             <div>
               <div class="card-actions">
                 <app-button
-                  *ngIf="item.id != 5"
                   linkDemo="{{ item.urlDemo }}"
                   text="VIEW PROJECT"
                 >
                 </app-button>
-                <app-button linkCode="{{ item.urlCode }}" text="VIEW CODE">
+                <app-button *ngIf="item.id != 5" linkCode="{{ item.urlCode }}" text="VIEW CODE">
                 </app-button>
               </div>
             </div>
@@ -35,13 +34,9 @@
             </span>
           </div>
           <div class="card-actions">
-            <app-button
-              *ngIf="item.id != 5"
-              linkDemo="{{ item.urlDemo }}"
-              text="VIEW PROJECT"
-            >
+            <app-button linkDemo="{{ item.urlDemo }}" text="VIEW PROJECT">
             </app-button>
-            <app-button linkCode="{{ item.urlCode }}" text="VIEW CODE">
+            <app-button *ngIf="item.id != 5" linkCode="{{ item.urlCode }}" text="VIEW CODE">
             </app-button>
           </div>
         </div>

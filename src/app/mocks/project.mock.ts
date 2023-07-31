@@ -37,7 +37,7 @@ export const PROJECTS_LIST: IProject[] = [
     urlCode: "https://github.com/emilioQuilodran/GifosAppQuilodran"
   },
   {
-    id: 7,
+    id: 5,
     title: "SPARK COMMUNITY",
     techs: ["NEXT.JS", "SASS"],
     image: 'assets/images/sparkApp.png',
