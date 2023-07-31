@@ -37,6 +37,15 @@ export const PROJECTS_LIST: IProject[] = [
     urlCode: "https://github.com/emilioQuilodran/GifosAppQuilodran"
   },
   {
+    id: 7,
+    title: "SPARK COMMUNITY",
+    techs: ["NEXT.JS", "SASS"],
+    image: 'assets/images/sparkApp.png',
+    desciption: "una plataforma para desarrollar sus habilidades y crecer profesionalmente a través de desafiantes proyectos semanales. Creemos firmemente en el poder del trabajo en equipo y la colaboración para impulsar el éxito duradero.",
+    urlDemo: "https://spark-app-faoi.vercel.app/",
+    urlCode: "https://github.com/emilioQuilodran/sparkApp"
+  },
+  {
     id: 6,
     title: "SUITE LANDING PAGE",
     techs: ["NEXT.JS", "SASS"],
