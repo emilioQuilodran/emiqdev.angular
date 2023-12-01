@@ -71,5 +71,14 @@ export const PROJECTS_LIST: IProject[] = [
     desciption: "I wanted to share this amazing countdown component that I created using React and Sass for today's project. It's a sleek and visually appealing countdown that you can easily integrate into your projects. The combination of React's flexibility and Sass's powerful styling capabilities made it a breeze to develop",
     urlDemo: "https://emiqdevcountdown.netlify.app/",
     urlCode: "https://github.com/emilioQuilodran/countdown"
+  },
+  {
+    id: 9,
+    title: "Partner finder app",
+    techs: ["Next.js", "React", "MUI", "MongoDB"],
+    image: 'assets/images/PartnerFinder.png',
+    desciption: "una aplicación de búsqueda de socios para el Sport Club",
+    urlDemo: "https://sport-c-partner-finder-app.vercel.app/",
+    urlCode: "https://github.com/emilioQuilodran/sportC-partner-finder-app"
   }
 ]
